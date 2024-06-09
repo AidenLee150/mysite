@@ -4,5 +4,5 @@ app = Flask(__name__, static_url_path='/static')
 def home():
     return render_template('index.html')
 
-if _name__ == '__main__':
+if __name__ == '__main__':
     app.run(port=5000, debug=True)
